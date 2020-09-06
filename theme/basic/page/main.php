@@ -99,7 +99,7 @@ for($val = 10; $val < 15; $val++) {
                         	<select>
                         		<option value="">해당지역</option>
                                 <option value="대전">대전</option>
-                                <option value="세종">청주</option>
+                                <option value="세종">세종</option>
                         	</select>
 
                         </div>
