@@ -1,0 +1,165 @@
+.carousel{ position: relative;}
+.carousel .viewport{ position: relative; }
+.carousel .viewport ul{ position: relative; }
+.carousel .dot{ position: relative; }
+
+.carousel {
+  height: 100%; }
+  .carousel .viewport {
+    overflow: hidden;
+    width: 100%; }
+    .carousel .viewport ul {
+      width: 100%; }
+      .carousel .viewport ul li {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%; }
+  .carousel .pointer {
+  	color:white;
+    position: absolute;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    margin-top: -24px;
+    line-height: 48px;
+    font-size: 24px;
+    font-family: "FontAwesome";
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s; }
+    .carousel .pointer.left {
+      left: 0; }
+      .carousel .pointer.left:before {
+        content: "\f104"; }
+      .carousel .pointer.left:hover {
+        background-color: white;
+        color: black; }
+    .carousel .pointer.right {
+      right: 0; }
+      .carousel .pointer.right:before {
+        content: "\f105";}
+      .carousel .pointer.right:hover {
+        background-color: white;
+        color: black; }
+    @media (max-width: 781px) {
+      .carousel .pointer {
+        margin-top: 0;
+        top: auto;
+        bottom: 0; } }
+  .carousel .dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 15.96px;
+    line-height: 18px;
+    text-align: center;
+    z-index: 1; }
+    .carousel .dots .dot {
+      display: inline-block;
+      width: 36px;
+      height: 3px;
+      margin: 0 3px;
+      background-color: rgba(255,255,255,0.5);
+      cursor: pointer; }
+      .carousel .dots .dot:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        transition: 0s width linear; }
+      .carousel .dots .dot.on:before {
+        content: "";
+        width: 100%;
+        background-color: rgba(255,255,255,1);
+        transition: 10s width linear; }
+  .carousel {
+    background-color: white;
+    color: black; }
+    .carousel li {
+      background-color: white; }
+  .carousel.dark {
+    background-color: black;
+    color: white; }
+    .carousel.dark li {
+      background-color: black; }
+  .carousel.inherit-parent-height {
+    height: 100%; }
+    .carousel.inherit-parent-height .viewport {
+      height: 100%; }
+      .carousel.inherit-parent-height .viewport ul {
+        height: 100%; }
+        .carousel.inherit-parent-height .viewport ul li {
+          height: 100%; }
+  .carousel.min .pointer.left {
+    display: none; }
+  .carousel.max .pointer.right {
+    display: none; }
+
+
+  .vertical-center {
+  height: 100%;
+  text-align: center;
+  overflow: auto;
+  -webkit-scrolling: touch; }
+  .vertical-center > .container {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle; }
+  .vertical-center:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    height: 100%;
+    margin-left: -0.5em; }
+  @media (min-width: 781px) {
+    .vertical-center-c {
+      height: 100%;
+      text-align: center;
+      overflow: auto;
+      -webkit-scrolling: touch; }
+      .vertical-center-c > .container {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle; }
+      .vertical-center-c:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        height: 100%;
+        margin-left: -0.5em; } }
+  @media (min-width: 541px) and (max-width: 780px) {
+    .vertical-center-t {
+      height: 100%;
+      text-align: center;
+      overflow: auto;
+      -webkit-scrolling: touch; }
+      .vertical-center-t > .container {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle; }
+      .vertical-center-t:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        height: 100%;
+        margin-left: -0.5em; } }
+  @media (max-width: 540px) {
+    .vertical-center-p {
+      height: 100%;
+      text-align: center;
+      overflow: auto;
+      -webkit-scrolling: touch; }
+      .vertical-center-p > .container {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle; }
+      .vertical-center-p:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        height: 100%;
+        margin-left: -0.5em; } }

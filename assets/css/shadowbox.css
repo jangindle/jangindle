@@ -1,0 +1,151 @@
+#sb-title-inner, #sb-info-inner, #sb-loading-inner, div.sb-message { font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 200; color: #fff; }
+
+#sb-container { position: fixed; margin: 0; padding: 0; top: 0; left: 0; z-index: 20000; text-align: left; visibility: hidden; display: none;  cursor: default; }
+
+#sb-overlay { position: fixed; height: 100%; width: 100%; }
+
+#sb-wrapper { position: absolute; visibility: hidden; width: 100px; }
+
+#sb-wrapper-inner { position: relative; overflow: hidden; height: 100px; }
+
+#sb-body { position: relative; height: 100%; }
+
+#sb-body-inner { position: absolute; height: 100%; width: 100%; }
+
+#sb-body-inner iframe { position:absolute; z-index:501; }
+
+#sb-player.html { height: 100%; overflow: auto; }
+
+#sb-body img { border: none; }
+
+#sb-loading { position: relative; height: 100%; }
+
+#sb-loading-inner { position: absolute; font-size: 14px; line-height: 24px; height: 24px; top: 50%; width: 100%; text-align: center; }
+
+#sb-loading-inner span { padding-left: 34px; display: inline-block; }
+
+#sb-body, #sb-loading { background:transparent; background:#000; }
+
+#sb-title { position: relative; margin: 0; padding: 0; overflow: hidden; }
+
+#sb-title{ display: none; }
+
+#sb-title, #sb-title-inner { height: 26px; line-height: 26px; }
+
+#sb-title-inner { font-size: 16px; }
+
+#sb-info, #sb-info-inner { height: 20px; line-height: 20px; }
+
+#sb-info-inner { font-size: 12px; }
+
+#sb-info{  }
+#sb-nav { }
+
+#sb-nav a { display: block; float: right; height: 30px; width: 30px; cursor: pointer; background-repeat: no-repeat; position:absolute; color: white; text-align: center; font-size:30px; line-height: 48px; }
+
+#sb-nav-close { /*background-image: url(close.png); */ width:30px; height:30px; position: absolute; top: -15px; right:-15px; z-index:502; }
+
+
+#sb-counter { float: left; width: 45%; display: none; }
+
+#sb-counter a { padding: 0 4px 0 0; text-decoration: none; cursor: pointer; color: #fff; }
+
+#sb-counter a.sb-counter-current { text-decoration: underline; }
+
+div.sb-message { font-size: 12px; padding: 10px; text-align: center; }
+
+div.sb-message a:link, div.sb-message a:visited { color: #fff; text-decoration: underline; }
+
+/* changes and social-layer */
+
+#sb-counter {
+	padding: 12px 0 0 48%;
+	color: #99918d;
+}
+
+a#sb-nav-next, a#sb-nav-previous {
+	display: block;
+	position: absolute;
+	left:0;
+	top:50%;
+	margin-top:-25px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:30px;
+	height:50px;
+	zoom: 1;
+	padding-right:4px;
+}
+
+a#sb-nav-next {
+	right:0; left:auto;
+	padding-right:0px;
+	padding-left:4px;
+}
+
+.ie6 a#sb-nav-next, .ie6 a#sb-nav-previous { top: 200px; right: 10px; }
+.ie7 a#sb-nav-next, .ie7 a#sb-nav-previous { top: 50%; right: 10px; }
+.ie8 a#sb-nav-next, .ie8 a#sb-nav-previous { top: 50%; right: -5px; }
+
+.ie6 a#sb-nav-previous, .ie7 a#sb-nav-previous, .ie8 a#sb-nav-previous { left: 10px; }
+
+#sb-wrapper-inner {
+}
+
+
+
+/* prevent form animating */
+#sb-title-inner { margin-top: 0 !important }
+
+#sb-info-inner { margin-top: -20px !important }
+
+#sb-loading-inner { position: absolute; line-height: 31px; height: 31px; margin-top: -16px; }
+
+#sb-loading-inner span {  padding-left: 0; color: transparent; }
+
+#sb-wrapper-inner {
+	overflow: visible;
+	background: transparent;
+}
+
+div#sb-social {
+	position: relative;
+	width: auto;
+	height: 20px;
+	text-align: center;
+}
+
+
+div#sb-social div#sb-social-inner {
+	display: inline-block;
+	border-top: 1px solid #fff;
+	padding: 10px 10px 0 10px;
+	width: auto;
+}
+
+#sb-wrapper-inner.withText { border-bottom: 95px solid #fff; }
+#sb-wrapper-inner.withText div#sb-social {	top: 55px; }
+#sb-wrapper-inner.withText div#sb-social div#sb-social-inner {	border-top: 1px solid #8e8682; }
+
+
+
+.ie6 div#sb-social div#sb-social-inner { width: 270px; }
+.ie7 div#sb-social div#sb-social-inner { width: 270px; }
+
+.ie6 div#sb-social div.item { float: left; }
+.ie7 div#sb-social div.item { float: left; }
+
+.item{ width: auto; }
+
+#sb-container .control{
+	position:absolute;
+	z-index:502;
+	cursor:pointer;
+	width: 48px;
+	height:48px;
+	background-image:url("/assets/images/component_48x48.png");
+	background-repeat: no-repeat;
+}
+#sb-container .control#sb-nav-previous{ top:50%; left:0; margin-top:-24px; background-position: -288px -144px; }
+#sb-container .control#sb-nav-next{ top:50%; right:0; margin-top:-24px; background-position: -288px -288px;}
+#sb-container .control#close{ width:24px; height:24px; top:0; right:0; display: none; }

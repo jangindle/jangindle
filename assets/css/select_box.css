@@ -1,0 +1,14 @@
+/* SELECT BOX */
+.select-box{display:inline-block;position:relative;border:1px solid #FFF;vertical-align:middle;}
+.select-box select{position:absolute;left:-9999px;display:none;}
+.select-box a{display:block;height:25px; line-height:25px;padding:0 10px;background:#FFF url(../images/main/blue-arrow.png) 105px center no-repeat;text-align:center !important;color:#FFF;font-size:1.1em;}
+.select-box a:visited, .select-box a:active, .select-box a:link, .select-box a:hover{text-decoration:none;}
+.select-box a i.fa{vertical-align:middle;float:right;padding-top:7px;}
+.select-box ul{position:absolute;left:-1px; top:25px;border:1px solid #ccc;display:none;background:#fff;max-height:240px; list-style:none;padding:0;margin:0;overflow:hidden;overflow-y:auto;z-index:999;
+scrollbar-face-color: #eaeaea;scrollbar-track-color: #f7f7f7;scrollbar-3dlight-color: #e2e2e2;scrollbar-arrow-color: #8c8c8c;scrollbar-shadow-color: #eaeaea;scrollbar-highlight-color: #eaeaea;scrollbar-darkshadow-color: #e2e2e2;}
+.select-box ul a{display:block;line-height:25px;height:25px;background:none;}
+
+.select-box.select-active a i{color:#4B87C8}
+.select-box.select-active ul a{color:#333;background:none;}
+.select-box.select-active ul a.hover{background:#85bee6;color:#fff}
+.select-box.select-active ul a.active{background:#85bee6;color:#fff}
